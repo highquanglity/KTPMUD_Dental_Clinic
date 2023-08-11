@@ -92,6 +92,8 @@ class Report(models.Model):
 
     def __str__(self):
         return f"Report ID: {self.ID_Report}"
+    class Meta:
+        ordering = ['reportDate']
 
 class BookingTicket(models.Model):
     ID_Patient = models.ForeignKey(Patient, on_delete=models.CASCADE)
@@ -112,5 +114,8 @@ class Trong(models.Model):
     ID_Service = models.ForeignKey(Service, on_delete=models.CASCADE)
 
 class Expertise(models.Model):
-    ID_Dentist = models.ForeignKey(Dentist, on_delete=models.CASCADE)
+    ID_Dentist = models.ForeignKey(Dentist, on_delete=models.CASCADE, related_name='expertises')
     ID_Service = models.ForeignKey(Service, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return f"Expertise ID: {self.pk}"
