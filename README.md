@@ -1,2 +1,2 @@
 # KTPMUD_Dental_Clinic
-Big project for application software engineering subject: Dental clinic management web
+Big project for application software engineering course: Dental clinic management web
