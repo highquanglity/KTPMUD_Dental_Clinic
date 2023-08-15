@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 322.98 261.58">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: Comfortaa-Regular, Comfortaa;
+        font-size: 20px;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #231f20;
+      }
+
+      .cls-3 {
+        fill: #fdc37d;
+      }
+
+      .cls-4 {
+        fill: #7bd2f5;
+      }
+
+      .cls-5 {
+        font-family: Comfortaa-Bold, Comfortaa;
+        font-size: 52px;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <g id="Landing_Page">
+    <g>
+      <text class="cls-1" transform="translate(0 173.96)"><tspan x="0" y="0">Tìm hiểu thêm về phòng khám </tspan><tspan x="0" y="32">nha khoa bằng cách xem các </tspan><tspan x="0" y="64">video giới thiệu này.</tspan></text>
+      <text class="cls-5" transform="translate(0 46.31)"><tspan class="cls-2"><tspan x="0" y="0">Nha khoa</tspan></tspan><tspan class="cls-3" x="0" y="58">confi</tspan><tspan class="cls-4" x="134.63" y="58">dental</tspan></text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 667.07 744.48">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: BeVietnam-Medium, 'Be Vietnam';
+        font-size: 26px;
+        font-weight: 500;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-5 {
+        fill: #fdc37d;
+      }
+
+      .cls-6 {
+        fill: #7bd2f5;
+      }
+
+      .cls-2 {
+        font-family: Comfortaa-Bold, Comfortaa;
+        font-size: 22px;
+      }
+
+      .cls-2, .cls-4 {
+        font-weight: 700;
+      }
+
+      .cls-3 {
+        filter: url(#drop-shadow-1);
+      }
+
+      .cls-4 {
+        font-family: BeVietnam-Bold, 'Be Vietnam';
+        font-size: 48px;
+      }
+    </style>
+    <filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="6"/>
+      <feGaussianBlur result="blur" stdDeviation="8"/>
+      <feFlood flood-color="#333" flood-opacity=".08"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Landing_Page">
+    <g>
+      <g>
+        <rect class="cls-3" x="24.77" y="18.19" width="606.33" height="696.11" rx="39.94" ry="39.94"/>
+        <path class="cls-5" d="m64.72,18.19h526.44c22.05,0,39.94,17.9,39.94,39.94v141.06H24.77V58.14c0-22.05,17.9-39.94,39.94-39.94Z"/>
+        <text class="cls-1" transform="translate(185.44 146.68)"><tspan x="0" y="0">Liên hệ: 0987-654-321</tspan></text>
+        <rect class="cls-6" x="259.49" y="178.05" width="136.9" height="42.3" rx="21.15" ry="21.15"/>
+        <text class="cls-2" transform="translate(298.96 206.29)"><tspan x="0" y="0">hoặc</tspan></text>
+        <text class="cls-4" transform="translate(64.18 105.19)"><tspan x="0" y="0">ĐẶT LỊCH NGAY TẠI ĐÂY</tspan></text>
+      </g>
+      <path class="cls-6" d="m0,718.22c5.16,13.19,20.04,19.7,33.23,14.54,13.19-5.16,19.7-20.04,14.54-33.23L0,718.22Z"/>
+      <path class="cls-5" d="m624.37,383.45c-7.85,11.79-4.66,27.72,7.13,35.57,11.79,7.85,27.72,4.66,35.57-7.13l-42.7-28.44Z"/>
+    </g>
+  </g>
+</svg>
