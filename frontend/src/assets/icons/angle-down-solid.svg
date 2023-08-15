@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.1 5.51">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #010101;
+      }
+    </style>
+  </defs>
+  <g id="Landing_Page">
+    <g id="Navbar">
+      <path class="cls-1" d="m9.88,1.19l-4.36,4.11c-.13.15-.3.21-.47.21s-.34-.06-.47-.19L.22,1.19C-.06.93-.07.49.19.22.45-.06.89-.07,1.16.19l3.89,3.68L8.94.19c.27-.26.71-.25.97.03.26.28.25.71-.03.98Z"/>
+    </g>
+  </g>
+</svg>

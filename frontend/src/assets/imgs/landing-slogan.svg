@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 513.65 310.05">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: 0em;
+      }
+
+      .cls-2 {
+        letter-spacing: 0em;
+      }
+
+      .cls-3 {
+        letter-spacing: 0em;
+      }
+
+      .cls-4 {
+        letter-spacing: 0em;
+      }
+
+      .cls-5 {
+        fill: #010101;
+      }
+
+      .cls-6, .cls-7 {
+        fill: #fdc37d;
+      }
+
+      .cls-8 {
+        fill: #7bd2f5;
+      }
+
+      .cls-9, .cls-10 {
+        fill: #231f20;
+      }
+
+      .cls-11 {
+        letter-spacing: 0em;
+      }
+
+      .cls-12 {
+        font-family: Comfortaa-Bold, Comfortaa;
+        font-size: 18px;
+      }
+
+      .cls-12, .cls-10 {
+        font-weight: 700;
+      }
+
+      .cls-13 {
+        letter-spacing: .02em;
+      }
+
+      .cls-14 {
+        letter-spacing: 0em;
+      }
+
+      .cls-7 {
+        letter-spacing: 0em;
+      }
+
+      .cls-15 {
+        letter-spacing: 0em;
+      }
+
+      .cls-10 {
+        font-family: BeVietnam-Bold, 'Be Vietnam';
+        font-size: 72px;
+      }
+    </style>
+  </defs>
+  <g id="Landing_Page">
+    <g>
+      <text class="cls-12" transform="translate(46.92 16.03)"><tspan class="cls-9" x="0" y="0">Nha khoa </tspan><tspan class="cls-7" x="96.77" y="0">confi</tspan><tspan class="cls-8" x="143.37" y="0">dental</tspan></text>
+      <text class="cls-10" transform="translate(48.72 108.35)"><tspan x="0" y="0">Đồ</tspan><tspan class="cls-3" x="93.31" y="0">n</tspan><tspan x="136.73" y="0">g </tspan><tspan class="cls-1" x="197.57" y="0">h</tspan><tspan class="cls-15" x="240.98" y="0">à</tspan><tspan class="cls-4" x="285.41" y="0">n</tspan><tspan x="329.18" y="0">h </tspan><tspan x="0" y="86.4">c</tspan><tspan class="cls-2" x="41.26" y="86.4">ù</tspan><tspan class="cls-1" x="84.31" y="86.4">n</tspan><tspan x="127.73" y="86.4">g nụ c</tspan><tspan class="cls-13" x="332.2" y="86.4">ư</tspan><tspan class="cls-14" x="376.27" y="86.4">ờ</tspan><tspan class="cls-11" x="420.91" y="86.4">i </tspan><tspan x="0" y="172.8" xml:space="preserve">      tự t</tspan><tspan class="cls-2" x="219.38" y="172.8">i</tspan><tspan class="cls-11" x="240.33" y="172.8">n</tspan></text>
+      <g>
+        <circle class="cls-6" cx="90.76" cy="258.85" r="36"/>
+        <path class="cls-5" d="m74.24,270.74c.11-.51.2-1.02.54-1.46.94-1.22,2.74-1.29,3.73-.1.55.66,1.05,1.38,1.67,1.98,2.5,2.45,5.51,3.81,8.98,4.1,4.84.4,9.11-1,12.65-4.37,1.98-1.89,3.3-4.19,3.95-6.86.13-.54.22-1.09.57-1.54.69-.91,1.89-1.22,2.9-.76,1.05.47,1.6,1.56,1.36,2.71-.83,3.95-2.71,7.31-5.63,10.09-1.99,1.9-4.28,3.35-6.86,4.28-5.29,1.91-10.57,1.86-15.75-.42-3.11-1.37-5.64-3.48-7.6-6.26-.09-.13-.12-.31-.28-.39l-.21-.99Z"/>
+      </g>
+      <path class="cls-8" d="m30.58,229.33c-16.89,0-30.58,13.69-30.58,30.58s13.69,30.58,30.58,30.58v-61.15Z"/>
+    </g>
+  </g>
+</svg>

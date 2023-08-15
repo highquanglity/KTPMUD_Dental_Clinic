@@ -1,0 +1,81 @@
+@font-face {
+  font-family: "Comfortaa Light";
+  src: local("Comfortaa"),
+    url("./assets/fonts/comfortaa/Comfortaa-Light.ttf") format("truetype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Comfortaa Regular";
+  src: local("Comfortaa"),
+    url("./assets/fonts/comfortaa/Comfortaa-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Comfortaa Medium";
+  src: local("Comfortaa"),
+    url("./assets/fonts/comfortaa/Comfortaa-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Comfortaa Semi Bold";
+  src: local("Comfortaa"),
+    url("./assets/fonts/comfortaa/Comfortaa-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Comfortaa Bold";
+  src: local("Comfortaa"),
+    url("./assets/fonts/comfortaa/Comfortaa-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Be Vietnam Light";
+  src: local("Be Vietnam"),
+    url("./assets/fonts/be-vietnam/BeVietnam-Light.ttf") format("truetype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Be Vietnam Regular";
+  src: local("Be Vietnam"),
+    url("./assets/fonts/be-vietnam/BeVietnam-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Be Vietnam Medium";
+  src: local("Be Vietnam"),
+    url("./assets/fonts/be-vietnam/BeVietnam-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Be Vietnam Semi Bold";
+  src: local("Be Vietnam"),
+    url("./assets/fonts/be-vietnam/BeVietnam-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Be Vietnam Bold";
+  src: local("Be Vietnam"),
+    url("./assets/fonts/be-vietnam/BeVietnam-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+:root {
+  --white-color: #ffffff;
+  --black-color: #231f20;
+  --border-blue-color: #7bd2f5;
+  --lighter-blue-color: #d0edfb;
+  --orange-color: #fdc37d;
+}
+
+* {
+  font-family: "Comfortaa", sans-serif;
+}
