@@ -58,6 +58,8 @@ class HealthRecord(models.Model):
 
     def __str__(self):
         return f"Record ID: {self.ID_Record}"
+    class Meta:
+        ordering = ['examinationDate']
 
 class DentistProcedure(models.Model):
     ID_Procedure = models.IntegerField(primary_key=True)
