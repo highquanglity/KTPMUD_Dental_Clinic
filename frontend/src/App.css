@@ -107,6 +107,7 @@
 .emergency-call:hover .emergency-call__text {
   font-weight: 700;
   color: #e9282b;
+  transition: all 0.3s ease-out 0s;
 }
 
 /* ------------ End declaring GLOBAL attributes ------------ */
@@ -213,6 +214,7 @@
 }
 
 .login__selection-item:hover,
+.signup__selection-item:hover,
 .login__selection-item--selected,
 .signup__selection-item--selected {
   cursor: pointer;
@@ -322,6 +324,7 @@
 }
 
 .login-signup-emergency-call {
+  position: absolute;
   left: 4rem;
   bottom: 3.2rem;
 }
@@ -830,8 +833,18 @@ p.header__feature-text {
   transition: all 0.3s ease-out 0s;
 }
 
+/* ------------ End declaring LANDING PAGE attributes ------------ */
+
+/* ------------ Start declaring SERVICE PAGE attributes ------------ */
+
+
+
+/* ------------ End declaring SERVICE PAGE attributes ------------ */
+
+/* ------------ Start declaring FOOTER attributes ------------ */
+
 .Footer {
   width: 100vw;
 }
 
-/* ------------ End declaring LANDING PAGE attributes ------------ */
+/* ------------ End declaring FOOTER attributes ------------ */
