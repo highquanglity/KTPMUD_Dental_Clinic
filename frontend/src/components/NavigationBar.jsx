@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link, useNavigate } from "react-router-dom";
 
 import logoNavbar from "../assets/icons/confidental-logo.svg";
 import angleDown from "../assets/icons/angle-down-solid.svg";
@@ -21,17 +22,21 @@ const NavigationBar = (props) => {
   }, []);
 
   return (
-    <div className={`Navbar Navbar--transparent ${isNavbarFixed ? "Navbar--fixed" : ""}`}>
+    <div
+      className={`Navbar Navbar--transparent ${
+        isNavbarFixed ? "Navbar--fixed" : ""
+      }`}
+    >
       <div className="grid wide">
         <nav className="navbar__main">
           <div className="navbar__wrap">
-            <a href="./LandingPage.js" className="navbar__logo">
+            <Link to="/home" className="navbar__logo">
               <img
                 className="navbar__logo-img"
                 src={logoNavbar}
                 alt="confidental Logo"
               />
-            </a>
+            </Link>
             <div className="navbar__menu">
               <ul className="navbar__menu-list">
                 <li
@@ -41,9 +46,9 @@ const NavigationBar = (props) => {
                       : "navbar__menu-item"
                   }
                 >
-                  <a href="./LandingPage.js" className="navbar__page-scroll">
+                  <Link to="/home" className="navbar__page-scroll">
                     Trang chủ
-                  </a>
+                  </Link>
                 </li>
                 <li
                   className={
@@ -52,10 +57,10 @@ const NavigationBar = (props) => {
                       : "navbar__menu-item"
                   }
                 >
-                  <a href="./ServicePage.js" className="navbar__page-scroll">
+                  <Link to="/service" className="navbar__page-scroll">
                     Dịch vụ
-                    <img src={angleDown} alt="" />
-                  </a>
+                    {/* <img src={angleDown} alt="" /> */}
+                  </Link>
                 </li>
                 <li
                   className={
@@ -64,9 +69,9 @@ const NavigationBar = (props) => {
                       : "navbar__menu-item"
                   }
                 >
-                  <a href="./DentistPage.js" className="navbar__page-scroll">
+                  <Link to="/dentist" className="navbar__page-scroll">
                     Nha sĩ
-                  </a>
+                  </Link>
                 </li>
                 <li
                   className={
@@ -75,9 +80,9 @@ const NavigationBar = (props) => {
                       : "navbar__menu-item"
                   }
                 >
-                  <a href="./AdvisePage.js" className="navbar__page-scroll">
+                  <Link to="/advise" className="navbar__page-scroll">
                     Tư vấn
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -87,9 +92,9 @@ const NavigationBar = (props) => {
               <img src={contactPhone} alt="" className="navbar__contact-icon" />
               <p className="navbar__contact-number">0987-654-321</p>
             </div>
-            <a href="./PatientPage.js" className="navbar__info">
+            <Link to="/patient" className="navbar__info">
               Thông tin cá nhân
-            </a>
+            </Link>
             <button className="navbar__logout">Đăng xuất</button>
           </div>
         </nav>

@@ -16,7 +16,7 @@ const SignupPage = () => {
   });
 
   const showIllegal = () => {
-    console.log("Chỉ có bệnh nhân mới có thể đăng ký tài khoản mới!");
+    alert("Chỉ có bệnh nhân mới có thể đăng ký tài khoản mới!");
   };
 
   const navigate = useNavigate();
@@ -25,7 +25,7 @@ const SignupPage = () => {
     axios.post("http://localhost:8033/signup", account)
          .then(res => {
           if (res.data.Status === "Success.") {
-            navigate("/login");
+            navigate("/");
           } else {
             alert("Error.");
           }
@@ -108,7 +108,7 @@ const SignupPage = () => {
           </div>
           <p className="signup__text">
             Bạn đã có tài khoản?
-            <Link className="signup__link" to="/login">Đăng nhập</Link>
+            <Link className="signup__link" to="/">Đăng nhập</Link>
           </p>
           <button className="signup__button" type="submit">
             <img className="signup__button-img" src={arrowRight} alt="Signup" />
