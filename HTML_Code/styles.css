@@ -1,0 +1,850 @@
+/* ------------ Start declaring GLOBAL attributes ------------ */
+
+.font-face-comfortaa-light {
+    font-family: "Comfortaa Light";
+  }
+  
+  .font-face-comfortaa-regular {
+    font-family: "Comfortaa Regular";
+  }
+  
+  .font-face-comfortaa-medium {
+    font-family: "Comfortaa Medium";
+  }
+  
+  .font-face-comfortaa-semi-bold {
+    font-family: "Comfortaa Semi Bold";
+  }
+  
+  .font-face-comfortaa-bold {
+    font-family: "Comfortaa Bold";
+  }
+  
+  .font-face-vietnam-light {
+    font-family: "Be Vietnam Light";
+  }
+  
+  .font-face-vietnam-regular {
+    font-family: "Be Vietnam Regular";
+  }
+  
+  .font-face-vietnam-medium {
+    font-family: "Be Vietnam Medium";
+  }
+  
+  .font-face-vietnam-semi-bold {
+    font-family: "Be Vietnam Semi Bold";
+  }
+  
+  .font-face-vietnam-bold {
+    font-family: "Be Vietnam Bold";
+  }
+  
+  .center-vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .left-vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* padding-left: 20px; */
+  }
+  
+  .right-vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    /* padding-right: 20px; */
+  }
+  
+  .center-horizontal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .App {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    overflow: hidden;
+    transition: all 0.32s;
+  }
+  
+  .emergency-call {
+    position: fixed;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    bottom: 4rem;
+    left: 6rem;
+    cursor: pointer;
+  }
+  
+  .emergency-call__icon {
+    height: 2rem;
+    margin-right: 0.8rem;
+  }
+  
+  .emergency-call__text {
+    margin-top: 0.2rem;
+    color: #808285;
+    font-size: 1.2rem;
+  }
+  
+  .emergency-call:hover .emergency-call__text {
+    font-weight: 700;
+    color: #e9282b;
+    transition: all 0.3s ease-out 0s;
+  }
+  
+  /* ------------ End declaring GLOBAL attributes ------------ */
+  
+  /* ------------ Start declaring LOGIN/SIGNUP PAGE attributes ------------ */
+  
+  .LoginPage,
+  .SignupPage {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+    overflow: hidden;
+    background-color: var(--border-blue-color);
+  }
+  
+  .login__background-logo,
+  .signup__background-logo {
+    position: fixed;
+    height: 80vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(32%, -50%);
+    z-index: 1;
+  }
+  
+  .login__main,
+  .signup__main {
+    position: relative;
+    width: 80vw;
+    height: 90vh;
+    background-color: var(--white-color);
+    box-shadow: 0 0 4pt rgba(255, 255, 255, 0.6);
+    border-radius: 3.2rem;
+    z-index: 2;
+  }
+  
+  .signup__main {
+    display: flex;
+  }
+  
+  .login__heading {
+    display: flex;
+    align-items: center;
+    margin: 4rem;
+    height: 6rem;
+  }
+  
+  .signup__heading {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 4rem;
+    height: 6rem;
+  }
+  
+  .login__heading-logo,
+  .signup__heading-logo {
+    height: 6rem;
+  }
+  
+  .login__heading-text,
+  .signup__heading-text {
+    margin-left: 3.2rem;
+    margin-top: 1.2rem;
+    font-size: 3.6rem;
+  }
+  
+  .login__sub-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 6rem;
+    margin-top: 5.6rem;
+  }
+  
+  .login__selection,
+  .signup__selection {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .signup__selection {
+    margin-top: 40px;
+  }
+  
+  .login__selection-menu,
+  .signup__selection-menu {
+    list-style: none;
+  }
+  
+  .login__selection-item,
+  .signup__selection-item {
+    padding: 1.2rem 2.4rem;
+    margin: 2rem 0;
+    font-size: 1.4rem;
+    border-radius: 4rem;
+    color: var(--white-color);
+    background-color: var(--border-blue-color);
+    text-align: center;
+  }
+  
+  .login__selection-item:hover,
+  .signup__selection-item:hover,
+  .login__selection-item--selected,
+  .signup__selection-item--selected {
+    cursor: pointer;
+    background-color: var(--orange-color);
+    transition: all 0.3s ease-out 0s;
+  }
+  
+  .login__form,
+  .signup__form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 64%;
+    padding: 6rem 4rem 4rem 4rem;
+    border-radius: 6rem;
+    background-color: var(--white-color);
+    box-shadow: 0 6pt 12pt rgba(35, 31, 32, 0.2);
+  }
+  
+  .signup__form {
+    margin: 4rem 0;
+  }
+  
+  .login__title,
+  .signup__title {
+    margin-bottom: 2rem;
+    font-size: 3.2rem;
+    color: var(--border-blue-color);
+  }
+  
+  .login__input,
+  .signup__input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.2rem 0;
+    font-size: 2rem;
+  }
+  
+  .login__input > label,
+  .signup__input > label {
+    margin-right: 2rem;
+  }
+  
+  .login__input > input,
+  .signup__input > input {
+    width: 48%;
+    padding: 1rem 2rem;
+    background-color: transparent;
+    border: 1px solid var(--black-color);
+    border-radius: 2rem;
+  }
+  
+  .login__input > input::placeholder,
+  .signup__input > input::placeholder {
+    padding-top: 0.4rem;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    font-weight: 300;
+  }
+  
+  .login__button,
+  .signup__button {
+    align-self: flex-end;
+    width: 6rem;
+    height: 6rem;
+    margin-top: 2rem;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--border-blue-color);
+  }
+  
+  .login__button:hover,
+  .signup__button:hover {
+    cursor: pointer;
+    background-color: var(--orange-color);
+    transition: all 0.3s ease-out 0s;
+  }
+  
+  .login__button-img,
+  .signup__button-img {
+    filter: invert(100%); /* Change color to white */
+    margin-top: 0.4rem;
+    width: 60%;
+  }
+  
+  .login__text,
+  .signup__text {
+    position: absolute;
+    left: 4rem;
+    bottom: 7.2rem;
+    font-size: 1.6rem;
+    color: var(--orange-color);
+  }
+  
+  .login__link,
+  .signup__link {
+    font-size: 1.2rem;
+    margin-left: 0.4rem;
+    border: none;
+    background-color: transparent;
+    color: var(--border-blue-color);
+    font-family: "Comfortaa", sans-serif;
+    font-size: 1.6rem;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  .login-signup-emergency-call {
+    position: absolute;
+    left: 4rem;
+    bottom: 3.2rem;
+  }
+  
+  .login-signup-emergency-call > .emergency-call__icon {
+    height: 1.6rem;
+  }
+  
+  .login-signup-emergency-call > .emergency-call__text {
+    font-size: 1rem;
+  }
+  
+  /* ------------ End declaring LOGIN/SIGNUP PAGE attributes ------------ */
+  
+  /* ------------ Start declaring NAVIGATION BAR attributes ------------ */
+  
+  .Navbar {
+    padding: 8px 0;
+    transition: all 0.32s ease-out 0s;
+  }
+  
+  .Navbar--transparent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: transparent;
+  }
+  
+  .Navbar--fixed {
+    position: fixed;
+    background-color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16);
+    transition: all 0.32s ease-out 0s;
+  }
+  
+  .navbar__main {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .navbar__wrap {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .navbar__logo {
+    display: inline-block;
+    line-height: inherit;
+    white-space: nowrap;
+  }
+  
+  .navbar__logo-img {
+    height: 4rem;
+  }
+  
+  .navbar__menu {
+    display: flex;
+    flex-basis: auto;
+    flex-grow: 1;
+    align-items: center;
+  }
+  
+  .navbar__menu-list {
+    display: flex;
+    padding-left: 0;
+    margin-bottom: 0;
+    margin-left: 3.2rem;
+    list-style: none;
+  }
+  
+  .navbar__menu-item {
+    /* position: relative; */
+    margin: 0 1.6rem;
+    transition: linear 0.4s;
+  }
+  
+  .navbar__page-scroll {
+    position: relative;
+    padding: 8px 0;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--black-color);
+    transition: all 0.3s ease-out 0s;
+  }
+  
+  .navbar__page-scroll::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 2px;
+    bottom: 2px;
+    left: 0;
+    background: transparent;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .navbar__page-scroll:hover,
+  .navbar__page-scroll:focus {
+    color: var(--border-blue-color);
+    background-color: transparent;
+  }
+  
+  .navbar__menu-item--selected .navbar__page-scroll {
+    color: var(--border-blue-color);
+    font-weight: 700;
+  }
+  
+  .navbar__menu-item--selected .navbar__page-scroll::before,
+  .navbar__page-scroll:hover::before,
+  .navbar__page-scroll:focus::before {
+    background-color: var(--border-blue-color);
+    width: 100%;
+  }
+  
+  .navbar__page-scroll img {
+    width: 1rem;
+    margin-left: 0.48rem;
+    margin-bottom: 0.06rem;
+    transition: all 0.3s ease-out 0s;
+  }
+  
+  .navbar__menu-item--selected .navbar__page-scroll img,
+  .navbar__page-scroll:hover img {
+    filter: invert(80%) sepia(7%) saturate(2848%) hue-rotate(165deg)
+      brightness(97%) contrast(99%);
+  }
+  
+  .navbar__sub-main,
+  .navbar__contact {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar__contact-icon {
+    height: 1.2rem;
+    margin-right: 0.6rem;
+  }
+  
+  .navbar__contact-number {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    font-weight: 400;
+  }
+  
+  .navbar__info {
+    margin: 0 0.8rem 0 2rem;
+    padding: 1.2rem 3.2rem;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    font-weight: 400;
+    color: var(--white-color);
+    background-color: var(--border-blue-color);
+    text-decoration: none;
+    border: none;
+    border-radius: 8rem;
+  }
+  
+  .navbar__logout {
+    padding: 1.2rem 3.2rem;
+    font-family: "Comfortaa", sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    font-weight: 400;
+    color: var(--white-color);
+    background-color: var(--border-blue-color);
+    border: none;
+    border-radius: 8rem;
+  }
+  
+  .navbar__info:hover,
+  .navbar__logout:hover {
+    cursor: pointer;
+    background-color: var(--orange-color);
+    transition: all 0.3s ease-out 0s;
+  }
+  
+  /* ------------ End declaring NAVIGATION BAR attributes ------------ */
+  
+  /* ------------ Start declaring LANDING PAGE attributes ------------ */
+  
+  .header__main {
+    position: relative;
+    width: 100%;
+    background-image: url(./assets/imgs/landing-header-bg.png);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .header__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 12vh;
+  }
+  
+  .header__content {
+    margin-top: 4vh;
+  }
+  
+  .header__description {
+    margin: 2rem 0 6rem 4rem;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    font-weight: 300;
+  }
+  
+  .header__button {
+    margin-left: 4rem;
+    padding: 2rem 6rem;
+    text-align: center;
+    border: none;
+    border-radius: 8rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--white-color);
+    background-color: var(--border-blue-color);
+    text-decoration: none;
+  }
+  
+  .header__button:hover {
+    cursor: pointer;
+    background-color: var(--orange-color);
+    transition: all 0.3s ease-out 0s;
+  }
+  
+  .header__img {
+    width: 50vw;
+  }
+  
+  .header__features {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    list-style: none;
+    padding: 2rem 0 4rem;
+  }
+  
+  .header__feature-item {
+    display: flex;
+    flex-direction: column;
+    margin: 0 3.2rem;
+  }
+  
+  .header__feature-icon {
+    width: 8rem;
+    height: 8rem;
+    transform: translateX(-1.6rem);
+  }
+  
+  b.header__feature-text {
+    font-size: 1.6rem;
+    margin: 0.8rem 0 1.6rem;
+  }
+  
+  p.header__feature-text {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    margin-bottom: 2.4rem;
+  }
+  
+  .header__feature-link {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    color: var(--border-blue-color);
+    text-decoration: none;
+  }
+  
+  .header__feature-link img {
+    margin-left: 0.6rem;
+    margin-bottom: 0.2rem;
+    width: 0.6rem;
+    filter: invert(80%) sepia(7%) saturate(2848%) hue-rotate(165deg)
+      brightness(97%) contrast(99%);
+  }
+  
+  .header__feature-link:hover {
+    font-weight: 700;
+  }
+  
+  .header__feature-link:hover img {
+    margin-left: 1rem;
+    transition: all 0.3s ease-out 0s;
+  }
+  
+  .Introduction {
+    position: relative;
+  }
+  
+  .introduction__main {
+    position: relative;
+    padding: 6rem 0 8rem;
+    width: 100%;
+    background-color: var(--lighter-blue-color);
+  }
+  
+  .introduction__wrap {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .introduction__content {
+    display: flex;
+    align-items: center;
+    padding: 3.2rem;
+    max-width: 80vw;
+    border-radius: 0 4rem 4rem 0;
+    background-color: var(--white-color);
+    transform: translateX(-16vw);
+  }
+  
+  .introduction__video-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 600px;
+    height: 500px;
+    overflow-x: scroll;
+    white-space: nowrap;
+  }
+  
+  .introduction__video {
+    position: relative;
+    margin: 0 1.6rem;
+    height: 480px;
+  }
+  
+  .introduction__video-img {
+    width: 280px;
+    height: 480px;
+  }
+  
+  .introduction__video-button {
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1.2rem;
+    left: 2rem;
+    bottom: 2rem;
+    font-size: 1.6rem;
+    border: none;
+    border-radius: 8rem;
+    background-color: var(--white-color);
+    transition: all 0.3s ease-out 0s;
+  }
+  
+  .introduction__video-button img:first-child {
+    height: 3.2rem;
+    width: 3.2rem;
+    margin-right: 1rem;
+  }
+  
+  .introduction__video-button img:last-child {
+    height: 1.2rem;
+    margin-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .introduction__text {
+    margin-left: 3.2rem;
+    margin-right: 2rem;
+    height: 16rem;
+  }
+  
+  .introduction__video-button:hover {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+  }
+  .introduction__video-button:hover img:first-child {
+    transform: rotate(360deg);
+    transition: transform 1s ease;
+  }
+  
+  .introduction__video-button:hover img:last-child {
+    margin-left: 1.2rem;
+    padding-right: 0.8rem;
+    transition: all 0.3s ease-out 0s;
+  }
+  
+  .introduction__sider {
+    margin-left: 4rem;
+    transform: translateX(-16vw);
+  }
+  
+  .introduction__description {
+    max-width: 240px;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .introduction__selection {
+    margin-top: 4rem;
+    list-style: none;
+  }
+  
+  .introduction__selection-item {
+    width: 140px;
+    padding: 1rem 2rem;
+    margin: 2rem 0;
+    border-radius: 8rem;
+    font-size: 1.4rem;
+    text-align: center;
+    color: var(--black-color);
+    background-color: var(--white-color);
+    transition: all 0.3s ease-out 0s;
+  }
+  
+  .introduction__selection-item:hover,
+  .introduction__selection-item--selected {
+    cursor: pointer;
+    color: var(--white-color);
+    background-color: var(--orange-color);
+  }
+  
+  .Booking {
+    position: relative;
+  }
+  
+  .booking__main {
+    padding: 4rem 0 0;
+  }
+  
+  .booking__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    transform: translatey(-12vh);
+  }
+  
+  .booking__content {
+    width: 36vw;
+  }
+  
+  .booking__form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--white-color);
+  }
+  
+  .booking__background {
+    position: absolute;
+    right: -2vw;
+    top: -32vh;
+    width: 48vw;
+  }
+  
+  .booking__input {
+    width: 40vw;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 2.8rem 1rem;
+    font-size: 1.6rem;
+  }
+  
+  .booking__input > label {
+    margin-right: 2rem;
+  }
+  
+  .booking__input > input {
+    width: 48%;
+    padding: 1rem 2rem;
+    background-color: transparent;
+    border: 1px solid var(--black-color);
+    border-radius: 2rem;
+  }
+  
+  .booking__input > input::placeholder {
+    padding-top: 0.4rem;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    font-weight: 300;
+  }
+  
+  .booking__button {
+    margin-top: 2rem;
+    padding: 1.2rem 6rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--white-color);
+    background-color: var(--border-blue-color);
+    border: none;
+    border-radius: 8rem;
+    z-index: 3;
+  }
+  
+  .booking__button:hover {
+    cursor: pointer;
+    background-color: var(--orange-color);
+    transition: all 0.3s ease-out 0s;
+  }
+  
+  /* ------------ End declaring LANDING PAGE attributes ------------ */
+  
+  /* ------------ Start declaring SERVICE PAGE attributes ------------ */
+  
+  
+  
+  /* ------------ End declaring SERVICE PAGE attributes ------------ */
+  
+  /* ------------ Start declaring FOOTER attributes ------------ */
+  
+  .Footer {
+    width: 100vw;
+  }
+  
+  /* ------------ End declaring FOOTER attributes ------------ */
