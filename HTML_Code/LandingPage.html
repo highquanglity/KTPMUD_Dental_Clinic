@@ -138,7 +138,8 @@
                         <div class="introduction__content">
                             <div class="introduction__video-list">
                                 <div class="introduction__video">
-                                    <img src="./assets/imgs/landing-intro-video-1.png" alt="" class="introduction__video-img" />
+                                    <img src="./assets/imgs/landing-intro-video-1.png" alt=""
+                                        class="introduction__video-img" />
                                     <button class="introduction__video-button">
                                         <img src="./assets/icons/play-icon-solid.svg" alt="" />
                                         Xem video
@@ -146,7 +147,8 @@
                                     </button>
                                 </div>
                                 <div class="introduction__video">
-                                    <img src="./assets/imgs/landing-intro-video-2.png" alt="" class="introduction__video-img" />
+                                    <img src="./assets/imgs/landing-intro-video-2.png" alt=""
+                                        class="introduction__video-img" />
                                     <button class="introduction__video-button">
                                         <img src="./assets/icons/play-icon-solid.svg" alt="" />
                                         Xem video
@@ -154,7 +156,8 @@
                                     </button>
                                 </div>
                                 <div class="introduction__video">
-                                    <img src="./assets/imgs/landing-intro-video-1.png" alt="" class="introduction__video-img" />
+                                    <img src="./assets/imgs/landing-intro-video-1.png" alt=""
+                                        class="introduction__video-img" />
                                     <button class="introduction__video-button">
                                         <img src="./assets/icons/play-icon-solid.svg" alt="" />
                                         Xem video
@@ -162,7 +165,8 @@
                                     </button>
                                 </div>
                                 <div class="introduction__video">
-                                    <img src="./assets/imgs/landing-intro-video-2.png" alt="" class="introduction__video-img" />
+                                    <img src="./assets/imgs/landing-intro-video-2.png" alt=""
+                                        class="introduction__video-img" />
                                     <button class="introduction__video-button">
                                         <img src="./assets/icons/play-icon-solid.svg" alt="" />
                                         Xem video
@@ -180,32 +184,24 @@
                             chúng tôi là luôn đạt được những kết quả tốt nhất cho sức khỏe
                             răng miệng của bạn. Bên cạnh đó, chúng tôi cũng tập trung vào
                             việc cung cấp cho bạn dịch vụ khách hàng tốt nhất.
-                          </p>
-                          <p class="introduction__description">
+                        </p>
+                        <p class="introduction__description">
                             Chúng tôi luôn cố gắng để phòng khám nha khoa này trở thành nơi
                             mà khách hàng tin tưởng nhất!
-                          </p>
-                          <ul class="introduction__selection">
-                            <li
-                              onclick="setCurrentType('intro');"
-                              class="introduction__selection-item introduction__selection-item--selected"
-                            >
-                              Giới thiệu
+                        </p>
+                        <ul class="introduction__selection">
+                            <li onclick="setCurrentType('intro');"
+                                class="introduction__selection-item introduction__selection-item--selected">
+                                Giới thiệu
                             </li>
-                            <li
-                              onclick="setCurrentType('gallery');"
-                              class="introduction__selection-item"
-                            >
-                              Thư viện ảnh
+                            <li onclick="setCurrentType('gallery');" class="introduction__selection-item">
+                                Thư viện ảnh
                             </li>
-                            <li
-                              onclick="setCurrentType('news');"
-                              class="introduction__selection-item"
-                            >
-                              Tin tức nha khoa
+                            <li onclick="setCurrentType('news');" class="introduction__selection-item">
+                                Tin tức nha khoa
                             </li>
-                          </ul>
-                          
+                        </ul>
+
                     </div>
                 </div>
             </div>
@@ -218,8 +214,34 @@
                     <img src="./assets/imgs/landing-maa-content.svg" alt="" class="booking__content">
                     <form class="booking__form" onsubmit="handleBooking()">
                         <img src="./assets/imgs/landing-booking-form.svg" alt="" class="booking__background">
-                        <!-- Your form inputs go here -->
-                        <button class="booking__button" type="submit">Đặt lịch hẹn</button>
+                        <img src="path/to/bookingBackground" alt="" class="booking__background" />
+                        <div class="booking__input">
+                            <label for="info">Họ và tên</label>
+                            <input value="" type="text" placeholder="" id="info" name="info" />
+                        </div>
+                        <div class="booking__input">
+                            <label for="phone">Số điện thoại</label>
+                            <input value="" type="tel" placeholder="" id="phone" name="phone" />
+                        </div>
+                        <div class="booking__input">
+                            <label for="datetime">Ngày giờ hẹn</label>
+                            <input value="" type="datetime-local" placeholder="" id="datetime" name="datetime" />
+                        </div>
+                        <div class="booking__input">
+                            <label for="service">Tên dịch vụ</label>
+                            <input value="" type="text" placeholder="" id="service" name="service" />
+                        </div>
+                        <div class="booking__input">
+                            <label for="dentist">Tên nha sĩ</label>
+                            <input value="" type="text" placeholder="" id="dentist" name="dentist" />
+                        </div>
+                        <div class="booking__input">
+                            <label for="notes">Ghi chú (nếu có)</label>
+                            <input value="" type="text" placeholder="" id="notes" name="notes" />
+                        </div>
+                        <button class="booking__button" type="submit">
+                            Đặt lịch hẹn
+                        </button>
                     </form>
                 </div>
             </div>
