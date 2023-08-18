@@ -20,7 +20,7 @@ from django.views.generic import RedirectView
 from django.conf import settings
 from django.conf.urls.static import static
 urlpatterns = [
-    path("admin/", admin.site.urls),
-    path("management_dental_clinic/", include("management_dental_clinic.urls")),
-    path("", RedirectView.as_view(url="management_dental_clinic/", permanent=True)),
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+    path("admin/", admin.site.urls, name="admin"),
+    path("", include("management_dental_clinic.urls")),
+    # path("", RedirectView.as_view(url="management_dental_clinic/", permanent=True)),
+] 

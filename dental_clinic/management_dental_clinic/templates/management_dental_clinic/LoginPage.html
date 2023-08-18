@@ -1,0 +1,64 @@
+{%load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="{%static 'base.css'%}" rel = "stylesheet"/>
+    <link href="{%static 'styles.css'%}" rel = "stylesheet"/>
+    <link href="{%static 'main.css'%}" rel = "stylesheet"/>
+</head>
+
+<body>
+    <div class="LoginPage">
+        <img class="login__background-logo" src="./assets/icons/confidental-mono.svg" alt="">
+        <div class="login__main">
+            <div class="login__heading">
+                <img class="login__heading-logo" src="./assets/icons/confidental-logo.svg" alt="">
+                <h1 class="login__heading-text">
+                    Chào mừng đến với
+                    <b style="color: var(--orange-color)">confi</b>
+                    <b style="color: var(--border-blue-color)">dental</b>!
+                </h1>
+            </div>
+            <div class="login__sub-main">
+                <form class="login__form" method='POST' action =''>
+                    {% csrf_token %}
+                    <h1 class="login__title">Đăng nhập</h1>
+                    <div class="login__selection">
+                        <p style="font-size: 1.6rem">Bạn là...
+                            <input type="radio" name="role" value="patient">Bệnh nhân
+                            <input type="radio" name="role" value="dentist">Nha sĩ
+                        </p>
+                    </div>
+                    <div class="login__input">
+                        <label for="username">Tên đăng nhập</label>
+                        <input type="text" placeholder="Nhập tên đăng nhập" id="username" name="username">
+                    </div>
+                    <div class="login__input">
+                        <label for="password">Mật khẩu</label>
+                        <input type="password" placeholder="" id="password" name="password">
+                    </div>
+                    <p class="login__text">
+                        Bạn chưa có tài khoản?
+                        <a class="login__link" href="/signup">Đăng ký ngay</a>
+                    </p>
+                    <button class="login__button" type="submit">
+                        <img class="login__button-img" src = "{% static 'assets/icons/arrow-right-solid.svg' %}" alt="Login">
+                    </button>
+                    {% if error_message %}
+                        <p class="error-message" style="color: red; display: flex; justify-content: center;">{{ error_message }}</p>
+                    {% endif %}
+                </form>
+            </div>
+            <div class="emergency-call login-signup-emergency-call">
+                <img class="emergency-call__icon" src="./assets/icons/emergency-call.svg" alt="">
+                <p class="emergency-call__text">Cứu hộ nha khoa 24/7</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

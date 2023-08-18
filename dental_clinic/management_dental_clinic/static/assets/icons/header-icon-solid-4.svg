@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 112.08 112.32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        filter: url(#outer-glow-1);
+      }
+
+      .cls-2 {
+        fill: #7bd2f5;
+      }
+    </style>
+    <filter id="outer-glow-1" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur result="blur" stdDeviation="8"/>
+      <feFlood flood-color="#231f20" flood-opacity=".12"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Landing_Page">
+    <g>
+      <circle class="cls-1" cx="56.02" cy="56.09" r="32"/>
+      <path class="cls-2" d="m51.02,59.88h3v3c0,.55.45,1,1,1h2c.55,0,1-.45,1-1v-3h3c.55,0,1-.45,1-1v-2c0-.55-.45-1-1-1h-3v-3c0-.55-.45-1-1-1h-2c-.55,0-1,.45-1,1v3h-3c-.55,0-1,.45-1,1v2c0,.55.45,1,1,1Zm17-14h-4v-2c0-2.21-1.79-4-4-4h-8c-2.21,0-4,1.79-4,4v2h-4c-2.21,0-4,1.79-4,4v16c0,2.21,1.79,4,4,4h24c2.21,0,4-1.79,4-4v-16c0-2.21-1.79-4-4-4Zm-17-2c0-.55.45-1,1-1h8c.55,0,1,.45,1,1v2h-10v-2Zm-6,23h-1c-.55,0-1-.45-1-1v-16c0-.55.45-1,1-1h1v18Zm19,0h-16v-18h16v18Zm5-1c0,.55-.45,1-1,1h-1v-18h1c.55,0,1,.45,1,1v16Z"/>
+    </g>
+  </g>
+</svg>

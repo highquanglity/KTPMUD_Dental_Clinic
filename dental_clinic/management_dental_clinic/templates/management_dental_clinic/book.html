@@ -1,0 +1,97 @@
+{% extends 'management_dental_clinic/base.html' %}
+{% load static %}
+
+{% block book %}
+<!-- Dento Pricing Table Area Start -->
+<section class="dento-pricing-table-area section-padding-100">
+    <div class="container">
+      <div class="row">
+        <!-- Section Heading -->
+        <div class="col-12">
+          <div class="section-heading text-center">
+            <h2>Pricing</h2>
+            <div class="line"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <div class="dento-price-table table-responsive">
+            <table class="table table-borderless mb-0">
+              <thead>
+                <tr>
+                  <th scope="col">Service Names</th>
+                  <th scope="col">Description</th>
+                  <th scope="col">Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for service in services %}
+                  <tr>
+                    <th scope="row">{{service.serviceName}}</th>
+                    <td>{{service.serviceDescription}}</td>
+                    <td>{{ service.cost|floatformat:"-3" }} VND</td>
+                  </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="more-btn text-center mt-50">
+            <a href="#" class="btn dento-btn">Read More <i class="fa fa-angle-double-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Dento Pricing Table Area End -->
+
+  <!-- Book An Oppointment Area Start -->
+  <section class="book-an-oppointment-area section-padding-100 bg-img bg-gradient-overlay jarallax clearfix" style="background-image: url({% static 'website/img/bg-img/12.jpg' %});">
+    <div class="container">
+      <div class="row">
+        <!-- Section Heading -->
+        <div class="col-12">
+          <div class="section-heading text-center white">
+            <h2>Book An Apointment</h2>
+            <div class="line"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <!-- Appointment Form -->
+          <div class="appointment-form">
+            <form  action ='' method="POST">
+                {% csrf_token %}
+                <div class="col-12">
+                  <div class="form-group mb-30">
+                    <select name="ID_Service" class="form-control">
+                      <option value="service">Service</option>
+                      {% for service in services %}
+                        <tr>
+                          <option value="{{service.ID_Service}}">{{service.serviceName}}</option>
+                        </tr>
+                      {% endfor %}
+                    </select>
+                  </div>
+                </div>
+                <div class="col-12 text-center">
+                  <button type="submit" class="btn dento-btn">Booking Now</button>
+                </div>
+              </div>
+                {% if success_message %}
+                    <p class="success-message" style="color: green; display: flex; justify-content: center;">{{ error_message }}</p>
+                {% endif %}
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Book An Oppointment Area End -->
+{% endblock %}

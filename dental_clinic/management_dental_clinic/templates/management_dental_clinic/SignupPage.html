@@ -1,0 +1,83 @@
+{%load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="{%static 'base.css'%}" rel = "stylesheet"/>
+    <link href="{%static 'styles.css'%}" rel = "stylesheet"/>
+</head>
+
+<body>
+    <div class="SignupPage">
+        <img class="signup__background-logo" src="./assets/icons/confidental-mono.svg" alt="">
+        <div class="signup__main">
+            <div class="signup__heading">
+                <img class="signup__heading-logo" src="./assets/icons/confidental-logo.svg" alt="">
+            </div>
+            <form class="signup__form" method='POST' action =''>
+                {% csrf_token %}
+                <h1 class="signup__title">Đăng ký</h1>
+                <div class="signup__input">
+                    <label for="firstname">Họ</label>
+                    <input type="text" placeholder="" id="firstname" name="firstname">
+                </div>
+                <div class="signup__input">
+                    <label for="lastname">Tên</label>
+                    <input type="text" placeholder="" id="lastname" name="lastname">
+                </div>
+                <div class="signup__input">
+                    <label for="phoneNumber">Số điện thoại</label>
+                    <input type="tel" placeholder="" id="phoneNumber" name="phoneNumber">
+                </div>
+                <div class="signup__input">
+                    <label for="email">Email</label>
+                    <input type="text" placeholder="" id="email" name="email">
+                </div>
+                <div class="signup__input">
+                    <label for="gender">Giới tính</label>
+                    <input type="text" placeholder="" id="gender" name="gender">
+                </div>
+                <div class="signup__input">
+                    <label for="insurance">Số BHYT</label>
+                    <input type="text" placeholder="" id="insurance" name="insurance">
+                </div>
+                <div class="signup__input">
+                    <label for="dob">Ngày sinh</label>
+                    <input type="date" placeholder="" id="dob" name="dob">
+                </div>
+                <div class="signup__input">
+                    <label for="username">Tên đăng nhập</label>
+                    <input type="text" placeholder="" id="username" name="username">
+                </div>
+                <div class="signup__input">
+                    <label for="password">Mật khẩu</label>
+                    <input type="password" placeholder="" id="password" name="password">
+                </div>
+                <div class="signup__input">
+                    <label for="password">Nhập lại mật khẩu</label>
+                    <input type="password" placeholder="" id="password2" name="password2">
+                </div>
+                <p class="signup__text">
+                    Bạn đã có tài khoản?
+                    <a class="signup__link" href="/">Đăng nhập</a>
+                </p>
+                <button class="signup__button" type="submit">
+                    <img class="signup__button-img" src="{% static 'assets/icons/arrow-right-solid.svg' %}" alt="Signup">
+                </button>
+                {% if error_message %}
+                    <p class="error-message" style="color: red; display: flex; justify-content: center;">{{ error_message }}</p>
+                {% endif %}
+            </form>
+            <div class="emergency-call login-signup-emergency-call">
+                <img class="emergency-call__icon" src="./assets/icons/header-icon-solid-1.svg" alt="">
+                <p class="emergency-call__text">Cứu hộ nha khoa 24/7</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
